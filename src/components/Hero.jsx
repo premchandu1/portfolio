@@ -14,9 +14,10 @@ export default function Hero() {
             Hi, I'm <span className="text-cyan-400">Prem Chandu</span>
           </h1>
 
-          <p className="text-gray-400 mb-8 text-lg">
-            Aspiring Data Analyst
-          </p>
+          <p className="text-gray-400 text-lg mb-8">
+  Aspiring Data Analyst | Open to Opportunities
+</p>
+
 
           <div className="flex gap-4">
             <a
