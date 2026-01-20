@@ -1,33 +1,47 @@
 export default function Skills() {
   const skills = [
-    "Excel",
-    "SQL",
-    "Power BI",
-    "Python (Basic)",
-    "GitHub",
-    "Data Analysis",
+    { name: "Excel" },
+    { name: "SQL" },
+    { name: "Power BI" },
+    { name: "Python" },
+    { name: "GitHub" },
+    { name: "Data Analytics" },
   ];
 
   return (
     <section
       id="skills"
-      className="bg-gray-100 py-24"
+      className="bg-black py-24 text-white scroll-mt-20"
     >
-      <div className="max-w-5xl mx-auto px-6">
-        
-        <h2 className="text-3xl font-semibold text-center mb-12 text-black">
+      <div className="max-w-6xl mx-auto px-6">
+
+        {/* SECTION TITLE */}
+        <h2
+          className="text-3xl font-bold text-center mb-14"
+          data-aos="fade-up"
+        >
           Skills
         </h2>
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 gap-8">
+        {/* SKILLS GRID */}
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
           {skills.map((skill) => (
             <div
-  key={skill}
-  className="bg-white text-black rounded-lg py-6 text-center font-medium shadow-sm hover:shadow-md hover:-translate-y-1 transition-transform"
->
-  {skill}
-</div>
-
+              key={skill.name}
+              className="
+                bg-white text-black rounded-xl p-6
+                flex flex-col items-center justify-center
+                shadow-md
+                hover:-translate-y-2 hover:shadow-xl
+                transition-all duration-300
+              "
+              data-aos="zoom-in"
+            >
+              {/* TITLE ONLY */}
+              <p className="font-semibold text-lg tracking-wide">
+                {skill.name}
+              </p>
+            </div>
           ))}
         </div>
 
